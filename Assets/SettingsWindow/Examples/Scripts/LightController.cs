@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using EasySettingWindow;
 
 public class LightController : MonoBehaviour {
 

@@ -1,4 +1,6 @@
 ﻿using UnityEngine;
+using EasySettingWindow;
+
 public struct CameraEventArgs {
     public Vector3 currentRotation;
     public Vector3 currentPosition;
@@ -8,6 +10,7 @@ public struct CameraEventArgs {
     public bool beingDragged;
 
 }
+
 public class CameraController : MonoBehaviour {
 
     public delegate void CameraEvent(CameraEventArgs e);

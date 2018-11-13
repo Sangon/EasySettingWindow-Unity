@@ -1,12 +1,16 @@
 ﻿using System;
 
-[AttributeUsage(AttributeTargets.Class)]
-public class SettingWindowBlockAttribute : Attribute {
+namespace EasySettingWindow {
 
-    public string Title;
+    [AttributeUsage(AttributeTargets.Class)]
+    public class SettingWindowBlockAttribute : Attribute {
 
-    public SettingWindowBlockAttribute(string Title) {
-        this.Title = Title;
+        public string Title;
+
+        public SettingWindowBlockAttribute(string Title) {
+            this.Title = Title;
+        }
+
     }
 
 }
