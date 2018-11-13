@@ -39,10 +39,15 @@ SettingsWindow/Examples/Scenes/Example.unity contains an already set up example 
     }
 
 ```
+(Dont forget to add the EasySettingWindow namespace)
+```C#
+using EasySettingWindow;
+```
+
 4. Add your object to the settings window by calling **SettingWindowHandler.Instance.AddBlock(object, "Title")** from somewhere in the code. (Start method is a good place)
 
 ```C#
-        SettingWindowHandler.Instance.AddBlock(this, "Lights");
+SettingWindowHandler.Instance.AddBlock(this, "Lights");
 ```
 5. The object should appear in the Settings window:
 
@@ -51,6 +56,7 @@ SettingsWindow/Examples/Scenes/Example.unity contains an already set up example 
 Complete code:
 ```C#
 using UnityEngine;
+using EasySettingWindow;
 
 public class LightController : MonoBehaviour {
 
